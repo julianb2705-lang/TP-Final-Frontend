@@ -6,7 +6,7 @@ const ChatContext = createContext(null)
 
 export function ChatProvider({ children }) {
   const [user, setUser] = useLocalStorage("user", null)
-  const [chats, setChats] = useLocalStorage("chats", initialChats)
+  const [chats, setChats] = useLocalStorage("chats-v4", initialChats)
 
   const login = (name) => setUser({ name })
   const logout = () => setUser(null)
