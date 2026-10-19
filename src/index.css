@@ -14,9 +14,17 @@ main { max-width: 600px; margin: 0 auto; padding: 16px; }
 .chat-item {
   padding: 12px;
   border-bottom: 1px solid #2a3942;
+  transition: background 0.2s;
 }
 
-.chat-item p { margin: 4px 0 0; color: #c4cdd2; }
+.chat-item:hover { 
+  background-color: #3b4a54; 
+}
+
+.chat-item p { 
+  margin: 4px 0 0;
+  color: #c4cdd2;
+ }
 
 .badge {
   background: #00a884;
