@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 function ChatItem({ chat }) {
   const ultimo =
     chat.messages.length === 0
@@ -6,9 +8,11 @@ function ChatItem({ chat }) {
 
   return (
     <li className="chat-item">
-      <strong>{chat.name}</strong>
-      <p>{ultimo}</p>
-      {chat.unread > 0 && <span className="badge">{chat.unread}</span>}
+      <Link to={`/chat/${chat.id}`}>
+        <strong>{chat.name}</strong>
+        <p>{ultimo}</p>
+        {chat.unread > 0 && <span className="badge">{chat.unread}</span>}
+      </Link>
     </li>
   )
 }

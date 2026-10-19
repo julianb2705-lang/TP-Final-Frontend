@@ -25,3 +25,49 @@ main { max-width: 600px; margin: 0 auto; padding: 16px; }
   padding: 2px 8px;
   font-weight: bold;
 }
+
+a { color: inherit; text-decoration: none; display: block; }
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid #53bdeb;
+  outline-offset: 2px;
+}
+
+label { display: block; margin: 12px 0 4px; }
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #8696a0;
+  background: #202c33;
+  color: #e9edef;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 8px;
+  background: #00a884;
+  color: #000;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.messages {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bubble { max-width: 80%; padding: 8px 12px; border-radius: 12px; background: #202c33; }
+.bubble.me { align-self: flex-end; background: #005c4b; }
+
+.message-form { display: flex; gap: 8px; }
