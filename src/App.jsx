@@ -1,5 +1,13 @@
+import ChatList from "./components/ChatList"
+import { initialChats } from "./data/chats"
+
 function App() {
-  return <h1>Chat App</h1>
+  return (
+    <main>
+      <h1>Chats</h1>
+      <ChatList chats={initialChats} />
+    </main>
+  )
 }
 
 export default App
