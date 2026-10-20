@@ -7,7 +7,12 @@ body {
   color: #e9edef;
 }
 
-main { max-width: 600px; margin: 0 auto; padding: 16px; }
+main { 
+  max-width: 600px;
+  margin: 0
+  auto;
+  padding: 16px; 
+}
 
 .chat-list { list-style: none; margin: 0; padding: 0; }
 

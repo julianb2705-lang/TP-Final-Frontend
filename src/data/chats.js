@@ -11,7 +11,7 @@ export const initialChats = [
   },
   
     { id: 2,
-    name: "Gasti",
+    name: "Eze",
     unread: 2,
     messages: [
     { id: 1, text: "Eu", from: "me" },
