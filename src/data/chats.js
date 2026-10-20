@@ -1,7 +1,7 @@
 export const initialChats = [
   { id: 1,
     name: "Juanma",
-    unread: 5,
+    unread: 4,
     online: true, 
     avatar: "/avatars/juanma.jpg",
     messages: [
