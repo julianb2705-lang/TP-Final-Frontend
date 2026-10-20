@@ -1,7 +1,9 @@
 export const initialChats = [
   { id: 1,
     name: "Juanma",
-    unread: 4, 
+    unread: 5,
+    online: true, 
+    avatar: "/avatars/juanma.jpg",
     messages: [
       { id: 1, text: "amigo", from: "other" },
       { id: 2, text: "estas para un picadito a las 7?", from: "other" },
@@ -13,6 +15,8 @@ export const initialChats = [
     { id: 2,
     name: "Eze",
     unread: 2,
+    online: true,
+    avatar: "/avatars/eze.jpg",
     messages: [
     { id: 1, text: "Eu", from: "me" },
     { id: 2, text: "Sabes cual es la planta que mas se arrepiente?", from: "me" },
@@ -26,6 +30,8 @@ export const initialChats = [
   { id: 3,
     name: "Mamá",
     unread: 0,
+    online: false,
+    avatar: "/avatars/mama.jpg",
     messages: [
     { id: 1, text: "{nombre}", from: "other" },
     { id: 2, text: "Estas en casa o ya saliste?", from: "other" },

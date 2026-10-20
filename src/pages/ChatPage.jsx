@@ -1,5 +1,6 @@
 import { Link, useParams } from "react-router-dom"
 import useChat from "../hooks/useChat"
+import Avatar from "../components/Avatar"
 import MessageBubble from "../components/MessageBubble"
 import MessageForm from "../components/MessageForm"
 
@@ -19,7 +20,15 @@ function ChatPage() {
   return (
     <main>
       <Link to="/">← Volver</Link>
-      <h1>{chat.name}</h1>
+      <header className="chat-header">
+        <Avatar name={chat.name} src={chat.avatar} size={56} />
+        <div>
+          <h1>{chat.name}</h1>
+          <p className={chat.online ? "status online" : "status"}>
+            {chat.online ? "En línea" : "Desconectado"}
+          </p>
+        </div>
+      </header>
       <ul className="messages">
         {chat.messages.map((m) => (
           <MessageBubble key={m.id} message={m} />

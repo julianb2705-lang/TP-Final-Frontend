@@ -2,7 +2,7 @@
 
 Aplicación web de mensajería inspirada en WhatsApp, desarrollada con React como trabajo práctico final de Frontend.
 
-**Link del despliegue:** https://TU-LINK.vercel.app
+**Link del despliegue:** https://tp-final-frontend-kappa.vercel.app
 
 ## Desafío elegido
 

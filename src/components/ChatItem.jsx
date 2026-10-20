@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import Avatar from "./Avatar"
 
 function ChatItem({ chat }) {
   const ultimo =
@@ -9,9 +10,14 @@ function ChatItem({ chat }) {
   return (
     <li className="chat-item">
       <Link to={`/chat/${chat.id}`}>
-        <strong>{chat.name}</strong>
-        <p>{ultimo}</p>
-        {chat.unread > 0 && <span className="badge">{chat.unread}</span>}
+        <div className="chat-row">
+          <Avatar name={chat.name} src={chat.avatar} />
+          <div className="chat-info">
+            <strong>{chat.name}</strong>
+            <p>{ultimo}</p>
+          </div>
+          {chat.unread > 0 && <span className="badge">{chat.unread}</span>}
+        </div>
       </Link>
     </li>
   )
